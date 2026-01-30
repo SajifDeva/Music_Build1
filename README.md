@@ -96,12 +96,12 @@ Phase 0 sets up the **foundation** for the church website project:
 ## 🔄 Project Flow Diagram
 
 ```mermaid
-
 flowchart LR
     A[Frontend: React + TypeScript] -->|REST API calls| B[Backend: Spring Boot + Kotlin]
     B --> C[Database: H2 in-memory]
     C --> B
     B -->|Responses| A
+
 
 
 ##  Next Steps (Phase 1)
@@ -121,5 +121,6 @@ flowchart LR
 cd backend
 ./gradlew bootRun
 # Open http://localhost:8080
+
 
 
