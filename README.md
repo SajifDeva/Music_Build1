@@ -97,30 +97,7 @@ Phase 0 sets up the **foundation** for the church website project:
 
 ```mermaid
 flowchart LR
-    A[Frontend: React + TypeScript] -->|REST API calls| B[Backend: Spring Boot + Kotlin]
-    B --> C[Database: H2 in-memory]
-    C --> B
-    B -->|Responses| A
-
-
-
-##  Next Steps (Phase 1)
-
-- Build **music page features**: chords, transpose, Nashville numbers  
-- Connect **frontend → backend** via REST APIs  
-- Implement **UI for musicians** to manage songs  
-- Add **unit and integration tests**  
-- Prepare for **deployment & hosting**
-
----
-
-## 🚀 How to Run Locally
-
-### Backend
-```bash
-cd backend
-./gradlew bootRun
-# Open http://localhost:8080
-
-
-
+    FE[Frontend: React + TypeScript] -->|REST API calls| BE[Backend: Spring Boot + Kotlin]
+    BE --> DB[Database: H2 in-memory]
+    DB --> BE
+    BE -->|Responses| FE
